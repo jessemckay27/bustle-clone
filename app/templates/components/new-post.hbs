@@ -1,0 +1,25 @@
+<form>
+  <div class="form-group">
+    <label for="title">Title</label>
+    {{input value=title id="title"}}
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input value=author id="author"}}
+  </div>
+  <div class="form-group">
+    <label for="image">Image</label>
+    {{input value=image id="image"}}
+  </div>
+  <div class="form-group">
+    <label for="text">Text</label>
+    {{input value=text id="text"}}
+  </div>
+  <button {{action 'savePost1'}}>Add Post</button>
+</form>
+
+{{#if isNewPost}}
+  <h1>You've</h1>
+{{else}}
+
+{{/if}}

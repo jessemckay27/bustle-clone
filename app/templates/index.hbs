@@ -1,0 +1,16 @@
+{{#link-to 'admin'}}Admin Portal{{/link-to}}
+{{#each model as |post|}}
+{{#link-to 'post' post.id}}
+  <div class="post-wrap">
+    <div class="post-title">
+      {{post.title}}
+    </div>
+    <div class="post-author">
+      <span>By </span>{{post.author}}
+    </div>
+    <div class="post-image">
+      <img src="{{post.image}}" alt="blog image" />
+    </div>
+  </div>
+{{/link-to}}
+{{/each}}

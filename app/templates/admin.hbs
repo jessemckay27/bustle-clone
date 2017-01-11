@@ -1,0 +1,14 @@
+<p>
+  Add a new post
+</p>
+{{new-post savePost2="savePost3"}}
+
+<br>
+
+{{#each model as |post|}}
+  <div>
+    <div>
+      {{#link-to 'post'}}{{post.title}}{{/link-to}}
+    </div>
+  </div>
+{{/each}}
